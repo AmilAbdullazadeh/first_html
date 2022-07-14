@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+
+        main {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+        }
+
+        #page {
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 32px;
+
+            width: 542px;
+            height: 450px;
+
+            /* Background/bg-primary */
+
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+
+        h3 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 120%;
+            /* identical to box height, or 34px */
+
+            display: flex;
+            align-items: center;
+
+            /* Label Colors/LC L Primary */
+
+            color: #000000;
+        }
+
+        p {
+            /* Text/1 regular */
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            /* identical to box height, or 28px */
+
+            display: flex;
+            align-items: center;
+
+            /* Label Colors/LC L Primary */
+
+            color: #000000;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            width: 478px;
+            height: 48px;
+            border-radius: 7px;
+            outline: none;
+            margin: 10px 0;
+            padding: 0 10px;
+            border: 1px solid gray;
+
+            /* Default size/Body */
+
+            font-family: 'SF Pro Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            /* identical to box height, or 129% */
+
+            letter-spacing: -0.408px;
+
+            /* Label Colors/LC L Secondary */
+
+            color: rgba(60, 60, 67, 0.6);
+        }
+
+        #submitBtn {
+            width: 478px;
+            height: 48px;
+            background: #6F1DF4;
+            border-radius: 8px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 120%;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            border: none;
+        }
+
+    </style>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+<header>
+
+</header>
+
+<main>
+
+    <section id="page" >
+
+        <h3>Заголовок</h3>
+        <p>Подпись</p>
+
+        <form>
+            <input type="text" placeholder="Please enter your fullname" id="fullname" name="fullname" >
+            <input type="email" placeholder="Please enter your email address" id="email" name="email" >
+            <input type="password" placeholder="Please enter your password" id="password" name="password" >
+
+            <input type="submit" value="Кнопка" id="submitBtn" >
+            <input type="checkbox" name="termsconditions" id="termsconditions"> <span>I agree to the Terms of Service</span>
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
